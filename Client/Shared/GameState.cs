@@ -170,7 +170,8 @@ public class GameState
 	public void ResetBoard() {
 		TheBoard = new List<byte>(new byte[42]);
 		PlayerTurn = 1;
-	}
+		CurrentTurn = 0;
+    }
 
 	public byte ConvertLandingSpotToRow(byte landingSpot)
 	{
